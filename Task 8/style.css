@@ -12,6 +12,8 @@
   min-height: 100vh;
   min-width: calc(100vw - (100vw - 100%));
   background-color: #fec631;
+  display: flex;
+  flex-direction: column;
 }
 
 .headline {
@@ -29,27 +31,36 @@ form {
   flex-wrap: wrap;
 }
 
-#search {
+#meter {
   width: 65%;
-  margin: 0;
-  padding: 20px;
-  outline: 0;
+  margin: 20px 0;
+  padding: 0;
+  outline: invert;
   border: 0;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 #submit-btn {
-  width: 35%;
-  background-color: #f7f7f7;
+  width: 45%;
+  background-color: #fefefe;
   border: 0;
   outline: 0;
   font-size: 1.1em;
+  padding: 3px 20px;
+  border-radius: 5px;
+
 }
 
 #submit-btn:hover {
   cursor: pointer;
   background-color: #000;
   color: #fff;
+}
+#output {
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 1.5em;
+  color: #000;
 }
 
 /* Tablet */
@@ -63,3 +74,4 @@ form {
     font-size: 2em;
   }
 }
+
