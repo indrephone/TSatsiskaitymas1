@@ -12,18 +12,46 @@ type TipasNaudoti = {
   spalva: string,
   kilometrazas: number
 };
+// sukuriam dviracio tipa
+type Dviraciai ={
+  metai: number,
+  spalva: string
+}
 
-const dviratis = {
+// remove the existing declaration of 'dviratis3'
+// const dviratis3: Dviraciai = {
+
+// assign a new value to 'dviratis3'
+const dviratis: Dviraciai = {
   metai: 1999,
-  spalva: ''
+  spalva: 'juoda'
 };
-const naujaMasina = {
-  marke: '',
-  modelis: '',
+
+// sukuriam NaujaMasina tipa
+
+type NaujaMasina = {
+  marke: string,
+  modelis: string,
+  metai: number,
+  spalva: string
+}
+
+const naujaMasina : NaujaMasina= {
+  marke: 'Volvo',
+  modelis: '234',
   metai: 2025,
-  spalva: ''
+  spalva: 'melyna'
 };
-const senaMasina = {
+
+// sukuriam SenaMasina tipa sujungiam su TipasNaudoti
+
+type SenaMasina = TipasNaudoti & {
+  kilometrazas: number
+  surudyjesDugnas: boolean
+};
+
+
+const senaMasina : SenaMasina= {
   marke: '',
   modelis: '',
   metai: 2025,
