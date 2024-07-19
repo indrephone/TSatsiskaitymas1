@@ -26,5 +26,37 @@ h1 {
   margin-top: 25px;
   padding: 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffcb7d;
+}
+
+.player-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-mini-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(145, 113, 44, 0.286);
+  width: calc(33.33% - 10px); /* adjust the width to fit 3 columns */
+  margin: 10px;
+}
+
+/* Media queries to adjust the column width on different screen sizes */
+
+@media (max-width: 768px) {
+  .player-mini-card {
+    width: calc(50% - 10px); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .player-mini-card {
+    width: 100%; /* 1 column on very small screens */
+  }
 }
