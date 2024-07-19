@@ -6,17 +6,14 @@ Pvz.:
   "kebabas" --> 1010101
   "a"       --> 1
 -------------------------------------------------------------------------- */
-
-function binaryTekstas(text: string): number {
-
-  if (text.length === 0) return 0;
-
-  let binary = '1';
-  for (let i = 0; i < text.length; i++) {
-    binary += i % 2 === 0 ? '0' : '1';
-  }
-  return parseInt(binary, 10);
+function binaryTekstas(text) {
+    if (text.length === 0)
+        return 0;
+    var binary = '1';
+    for (var i = 0; i < text.length; i++) {
+        binary += i % 2 === 0 ? '0' : '1';
+    }
+    return parseInt(binary, 10);
 }
-
-const result = binaryTekstas("eris");
+var result = binaryTekstas("eris");
 console.log(result);

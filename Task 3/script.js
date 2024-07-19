@@ -7,17 +7,17 @@ Pastaba: Aprašyto tipo NEKEISTI
 // remove the existing declaration of 'dviratis3'
 // const dviratis3: Dviraciai = {
 // assign a new value to 'dviratis3'
-var dviratisNeglobalus = {
+var dviratis = {
     metai: 1999,
     spalva: 'juoda'
 };
-var naujaMasinaNeglobalus = {
+var naujaMasina = {
     marke: 'Volvo',
     modelis: '234',
     metai: 2025,
     spalva: 'melyna'
 };
-var senaMasinaNeglobalus = {
+var senaMasina = {
     marke: '',
     modelis: '',
     metai: 2025,
