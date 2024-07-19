@@ -61,8 +61,33 @@ form {
   margin: 20px auto;
   font-size: 1.5em;
   color: #000;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#output p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
+#output ul {
+  list-style: none;
+  padding: 0;
+}
+
+#output li {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+#output li:nth-child(odd) {
+  background-color: #f0f0f0; /* Light gray for odd items */
+}
+
+#output li:nth-child(even) {
+  background-color: #e0e0e0; /* Slightly darker gray for even items */
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
